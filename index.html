@@ -19,18 +19,30 @@
             </h1>
             
         </div>    
-        <div class = "panel panel-default">
-        <div class = "panel-heading">Search Parameters</div>
-        <div class = "panel-body">
-        <form>
+        
+        <div class = "card">
+        <div class = "card-header"><strong>Search Parameters</strong></div>
+        <form class = "searchForm">
             <div class="form-group">
-                <label for="searchTerm">Seach Term: </label>
+                <label for="searchTerm">Search Term: </label>
                 <input type="search" class="form-control" id="searchTerm">
                 
             </div>
             <div class="form-group">
                 <label for="recordsRetrieve">Number of Records to Retrieve: </label>
-                <input type="recordsCount" class="form-control" id="recordsRetrieve">
+                <select type="recordsCount" class="form-control" id="recordsRetrieve"> //$("#recordsRetrieve").text();
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                </select>
+                        
             </div>
             <div class="form-group">
                     <label for="startYear">Start Year (Optional): </label>
@@ -41,17 +53,16 @@
                     <label for="endYear">End Year (Optional): </label>
                     <input type="year" class="form-control" id="endYear">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            
+            <button id = "search" class = "link">Search</button>
+            <button id = "clearResults" class = "link">Clear Results</button>
             </form>
         </div>
-        </div>
-        <div class="panel panel-default">
-                <div class="panel-heading">Panel heading without title</div>
-                <div class="panel-body">
-                  Panel content
-                </div>
-              </div>
+
+        <div class = "card">
+        <div id = "topArticles" class = "card-header"><strong>Top Articles</strong></div>
+        <div class="card-body"> </div>
+        
+      
     
 
 </body>
