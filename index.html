@@ -7,31 +7,52 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href = "css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type = "text/javascript" src = "script/script.js"></script>
+  
 </head>
 
 <body>
     <div class = "container">
         <div class="jumbotron">
-            <h1 class="display-5"><strong>New York Times Search</strong></h1>
+            <h1 class="display-5">
+               
+                <strong>New York Times Search</strong>
+            </h1>
             
         </div>    
+        <div class = "panel panel-default">
+        <div class = "panel-heading">Search Parameters</div>
+        <div class = "panel-body">
         <form>
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <label for="searchTerm">Seach Term: </label>
+                <input type="search" class="form-control" id="searchTerm">
+                
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <label for="recordsRetrieve">Number of Records to Retrieve: </label>
+                <input type="recordsCount" class="form-control" id="recordsRetrieve">
             </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="form-group">
+                    <label for="startYear">Start Year (Optional): </label>
+                    <input type="year" class="form-control" id="startYear">
+                    
+            </div>
+            <div class="form-group">
+                    <label for="endYear">End Year (Optional): </label>
+                    <input type="year" class="form-control" id="endYear">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+            </form>
+        </div>
+        </div>
+        <div class="panel panel-default">
+                <div class="panel-heading">Panel heading without title</div>
+                <div class="panel-body">
+                  Panel content
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+              </div>
+    
 
 </body>
 
