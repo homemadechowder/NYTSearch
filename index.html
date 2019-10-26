@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <title>NYT Search</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
   <link rel="stylesheet" href = "css/style.css">
+  <script src="https://use.fontawesome.com/7170ed67d1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
 </head>
@@ -13,15 +15,18 @@
 <body>
     <div class = "container">
         <div class="jumbotron">
+            
             <h1 class="display-5">
-               
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
                 <strong>New York Times Search</strong>
             </h1>
             
         </div>    
         
         <div class = "card">
-        <div class = "card-header"><strong>Search Parameters</strong></div>
+        <div class = "card-header">
+            <i class="fa fa-list-alt" aria-hidden="true"></i>
+            <strong>Search Parameters</strong></div>
         <form class = "searchForm">
             <div class="form-group">
                 <label for="searchTerm">Search Term: </label>
@@ -53,14 +58,33 @@
                     <label for="endYear">End Year (Optional): </label>
                     <input type="year" class="form-control" id="endYear">
             </div>
-            <button id = "search" class = "link">Search</button>
-            <button id = "clearResults" class = "link">Clear Results</button>
+            <button id = "search" class = "link">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                Search
+            </button>
+            <button id = "clearResults" class = "link">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+                Clear Results
+            </button>
             </form>
         </div>
 
         <div class = "card">
-        <div id = "topArticles" class = "card-header"><strong>Top Articles</strong></div>
-        <div class="card-body"> </div>
+        <div id = "topArticles" class = "card-header">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+                <strong>Top Articles</strong></div>
+        <div class="card-body"> 
+
+        </div>
+        </div>
+        <hr>
+            <div class = "row">
+               <div id = "footer" class = "col-md-12">
+                Made with lots and lots of <i class="fa fa-bolt" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        
         
       
     

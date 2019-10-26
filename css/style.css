@@ -8,6 +8,11 @@
     
 }
 
+#footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+}
 .searchForm{
     padding: 20px;
    
