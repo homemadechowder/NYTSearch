@@ -1,0 +1,35 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif
+}
+.jumbotron{
+    background-color: #1d2951;
+    color: white;
+    text-align: center;
+    
+}
+
+#footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+}
+.searchForm{
+    padding: 20px;
+   
+}
+.card{
+    margin-bottom: 20px;
+
+}
+
+button.link{
+    background: none;
+    border: none;
+}
+
+button.hover{
+    text-decoration: underline;
+}
+#topArticles{
+
+}
